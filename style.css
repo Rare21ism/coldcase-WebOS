@@ -1,0 +1,364 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+  height:100vh;
+  overflow:hidden;
+  background:
+  linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
+  url("https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1600");
+  background-size:cover;
+  background-position:center;
+}
+
+.topbar{
+  height:50px;
+  background:#121212;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:0 20px;
+  color:white;
+  border-bottom:1px solid #333;
+}
+
+.logo{
+  font-weight:bold;
+}
+
+.desktop{
+  padding:20px;
+}
+
+.icon{
+  width:90px;
+  margin-bottom:25px;
+  color:white;
+  text-align:center;
+  cursor:pointer;
+}
+
+.icon-img{
+  font-size:48px;
+}
+
+.icon p{
+  margin-top:8px;
+  font-size:14px;
+}
+
+#caseWindow{
+  position:absolute;
+  top:120px;
+  left:250px;
+  width:460px;
+  background:#111827;
+  border:2px solid #7f1d1d;
+  border-radius:8px;
+  overflow:hidden;
+  display:none;
+  box-shadow:0 15px 35px rgba(0,0,0,.45);
+}
+
+#caseWindowHeader{
+  background:linear-gradient(to right,#7f1d1d,#991b1b);
+  color:#fef2f2;
+  padding:12px 16px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  cursor:move;
+  user-select:none;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  font-weight:bold;
+}
+
+#caseWindowHeader button{
+  border:none;
+  background:none;
+  color:white;
+  font-size:16px;
+  cursor:pointer;
+}
+
+.window-content{
+  padding:20px;
+  line-height:1.8;
+  background:#111827;
+  color:#e5e7eb;
+}
+#welcome-screen{
+  position:fixed;
+  width:100%;
+  height:100%;
+  z-index:1000;
+}
+
+.overlay{
+  width:100%;
+  height:100%;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  background:
+    linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)),
+    url("https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1600");
+  background-size:cover;
+  background-position:center;
+  position:relative;
+}
+
+.login-card{
+  width:420px;
+  padding:40px;
+  text-align:center;
+  background:rgba(20,20,20,.9);
+  border:1px solid #dc2626;
+  border-radius:15px;
+  color:white;
+  backdrop-filter:blur(10px);
+}
+
+.login-card h1{
+  color:#dc2626;
+  margin-bottom:10px;
+}
+
+.tagline{
+  color:#d1d5db;
+  font-style:italic;
+  margin-bottom:20px;
+}
+
+.info{
+  margin:25px 0;
+  line-height:1.8;
+}
+
+.login-card button{
+  width:100%;
+  height:60px;
+  background:#dc2626;
+  color:white;
+  border:none;
+  border-radius:12px;
+  font-size:20px;
+  font-weight:bold;
+ transition:0.2s;
+  cursor:pointer;
+}
+
+.footer-right{
+  position:absolute;
+  right:20px;
+  bottom:20px;
+  color:white;
+  text-align:right;
+}
+
+#desktop-screen{
+  display:none;
+}
+#login-screen{
+  position:fixed;
+  inset:0;
+  display:none;
+  justify-content:center;
+  align-items:center;
+  background:rgba(0,0,0,.85);
+  z-index:2000;
+}
+
+.login-popup{
+  width:420px;
+  padding:30px;
+  background:white;
+  border-radius:12px;
+}
+
+.login-popup input{
+  width:100%;
+  padding:12px;
+  margin:15px 0;
+  font-size:16px;
+}
+
+.login-popup button{
+  width:100%;
+  padding:12px;
+}
+#evidenceWindow{
+  position:absolute;
+  top:180px;
+  left:350px;
+  width:460px;
+  background:#111827;
+  border:2px solid #1e3a8a;
+  border-radius:8px;
+  overflow:hidden;
+  display:none;
+  box-shadow:0 15px 35px rgba(0,0,0,.45);
+}
+
+#evidenceWindowHeader{
+  background:linear-gradient(to right,#1e3a8a,#2563eb);
+  color:white;
+  padding:12px 16px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  cursor:move;
+  user-select:none;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  font-weight:bold;
+}
+
+#evidenceWindowHeader button{
+  border:none;
+  background:none;
+  color:white;
+  cursor:pointer;
+  font-size:16px;
+}
+#suspectWindow{
+  position:absolute;
+  top:220px;
+  left:450px;
+  width:460px;
+  background:#111827;
+  border:2px solid #4c1d95;
+  border-radius:8px;
+  overflow:hidden;
+  display:none;
+  box-shadow:0 15px 35px rgba(0,0,0,.45);
+}
+
+#suspectWindowHeader{
+  background:linear-gradient(to right,#4c1d95,#7c3aed);
+  color:white;
+  padding:12px 16px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  cursor:move;
+  user-select:none;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  font-weight:bold;
+}
+
+#suspectWindowHeader button{
+  border:none;
+  background:none;
+  color:white;
+  cursor:pointer;
+  font-size:16px;
+}
+
+
+.case-card,
+.evidence-card,
+.suspect-card{
+  margin-top:15px;
+  padding:15px;
+  border:1px solid #374151;
+  border-radius:8px;
+  background:#1f2937;
+}
+
+
+.case-card h3,
+.evidence-card h3{
+  margin-bottom:8px;
+  color:#93c5fd;
+}
+.suspect-card h3{
+  margin-bottom:8px;
+  color:#c4b5fd;
+}
+
+
+.case-card p,
+.evidence-card p,
+.suspect-card p{
+  margin-bottom:4px;
+}
+
+.window-content h2{
+  color:#f3f4f6;
+  border-bottom:1px solid #374151;
+  padding-bottom:8px;
+  margin-bottom:12px;
+}
+#caseWindowHeader button,
+#evidenceWindowHeader button,
+#suspectWindowHeader button{
+  transition:0.2s;
+}
+
+#caseWindowHeader button:hover,
+#evidenceWindowHeader button:hover,
+#suspectWindowHeader button:hover{
+  opacity:0.7;
+  max-height: 75vh;
+}
+
+.window-content{
+  max-height: calc(75vh - 52px);
+  overflow-y: auto;
+}
+.window-content::-webkit-scrollbar{
+  width:8px;
+}
+
+.window-content::-webkit-scrollbar-track{
+  background:#111827;
+}
+
+.window-content::-webkit-scrollbar-thumb{
+  background:#374151;
+  border-radius:999px;
+}
+#crimeMapWindow{
+  position:absolute;
+  top:160px;
+  left:520px;
+  width:460px;
+  max-height:75vh;
+  background:#111827;
+  border:2px solid #065f46;
+  border-radius:8px;
+  overflow:hidden;
+  display:none;
+  box-shadow:0 15px 35px rgba(0,0,0,.45);
+}
+
+#crimeMapWindowHeader{
+  background:linear-gradient(to right,#065f46,#059669);
+  color:white;
+  padding:12px 16px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  cursor:move;
+  user-select:none;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  font-weight:bold;
+}
+
+#crimeMapWindowHeader button{
+  border:none;
+  background:none;
+  color:white;
+  cursor:pointer;
+  font-size:16px;
+}

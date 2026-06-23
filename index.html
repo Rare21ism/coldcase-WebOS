@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detectives Club OS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- WELCOME SCREEN -->
+  <div id="welcome-screen">
+    <div class="overlay">
+
+      <div class="login-card">
+
+        <h1>Welcome to Detectives Club</h1>
+
+        <p class="tagline">
+          The Game Is Afoot.
+        </p>
+
+        <div class="info">
+          <p>Investigations.</p>
+          <p>Evidence.</p>
+          <p>Truth.</p>
+        </div>
+
+        <button onclick="showLogin()">
+          Begin Investigation
+        </button>
+
+      </div>
+
+      <div class="footer-right" id="welcomeClock"></div>
+
+    </div>
+  </div>
+
+  <!-- DETECTIVE NAME SCREEN -->
+  <div id="login-screen">
+
+    <div class="login-popup">
+
+      <h3>Enter Detective Name</h3>
+
+      <input
+        type="text"
+        id="detectiveInput"
+        placeholder="Detective Name"
+      >
+
+      <button onclick="startInvestigation()">
+        Continue
+      </button>
+
+    </div>
+
+  </div>
+
+  <!-- DESKTOP -->
+  <div id="desktop-screen">
+
+    <div class="topbar">
+      <div class="logo">🕵️ Detectives Club</div>
+      <div id="clock"></div>
+    </div>
+
+    <div class="desktop">
+
+      <div class="icon" onclick="openWindow()">
+        <div class="icon-img">📁</div>
+        <p>Case Files</p>
+      </div>
+
+      <div class="icon" onclick="openEvidenceWindow()">
+        <div class="icon-img">🔍</div>
+        <p>Evidence</p>
+    </div>
+
+      <div class="icon" onclick="openSuspectWindow()">
+        <div class="icon-img">👤</div>
+        <p>Suspects</p>
+      </div>
+
+      <div class="icon" onclick="openCrimeMapWindow()">
+        <div class="icon-img">🗺️</div>
+        <p>Crime Map</p>
+      </div>
+
+    </div>
+
+    <div id="caseWindow">
+
+      <div id="caseWindowHeader">
+        <span>Case Files</span>
+
+        <button onclick="closeWindow()">
+          ✖
+        </button>
+      </div>
+
+      <div class="window-content">
+
+        <h2>Case Files</h2>
+
+        <div class="case-card">
+          <h3>Case 001</h3>
+          <p>Title: The Missing Prototype</p>
+          <p>Status: Open Investigation</p>
+          <p>
+            Lead Detective:
+            <span id="detectiveName">Unknown</span>
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div id="evidenceWindow">
+
+  <div id="evidenceWindowHeader">
+
+    <span>🔍 Evidence Locker</span>
+
+    <button onclick="closeEvidenceWindow()">
+      ✖
+    </button>
+
+  </div>
+
+  <div class="window-content">
+
+  <h2>Collected Evidence</h2>
+
+  <div class="evidence-card">
+    <h3>Evidence A</h3>
+    <p>Security Report</p>
+  </div>
+
+  <div class="evidence-card">
+    <h3>Evidence B</h3>
+    <p>CCTV Screenshot</p>
+  </div>
+
+  <div class="evidence-card">
+    <h3>Evidence C</h3>
+    <p>Access Keycard</p>
+  </div>
+
+  <div class="evidence-card">
+    <h3>Evidence D</h3>
+    <p>Mobile Phone Logs</p>
+  </div>
+
+  <div class="evidence-card">
+    <h3>Evidence E</h3>
+    <p>Witness Statement</p>
+  </div>
+
+  </div>
+
+</div>
+<div id="suspectWindow">
+
+  <div id="suspectWindowHeader">
+    <span>👤 Suspect Database</span>
+
+    <button onclick="closeSuspectWindow()">
+      ✖
+    </button>
+  </div>
+
+  <div class="window-content">
+
+    <h2>Known Suspects</h2>
+
+    <div class="suspect-card">
+      <h3>Jonnya kabutar marya</h3>
+      <p>Status: Under Investigation</p>
+      <p>Last Seen: Harbor Sector</p>
+    </div>
+
+    <div class="suspect-card">
+      <h3>Jannya sutarfheni</h3>
+      <p>Status: Person of Interest</p>
+      <p>Last Seen: Industrial Zone </p>
+    </div>
+
+  </div>
+
+</div>
+
+<div id="crimeMapWindow">
+
+  <div id="crimeMapWindowHeader">
+    <span>Crime Map</span>
+
+    <button onclick="closeCrimeMapWindow()">
+      ✖
+    </button>
+  </div>
+
+  <div class="window-content">
+
+    <h2>Active Locations</h2>
+
+    <div class="case-card">
+      <h3>Downtown District</h3>
+      <p>Case Activity: High</p>
+      <p>Open Cases: 3</p>
+    </div>
+
+    <div class="case-card">
+      <h3>Harbor Sector</h3>
+      <p>Case Activity: Medium</p>
+      <p>Open Cases: 1</p>
+    </div>
+
+    <div class="case-card">
+      <h3>Industrial Zone</h3>
+      <p>Case Activity: Critical</p>
+      <p>Open Cases: 5</p>
+    </div>
+
+  </div>
+
+</div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
