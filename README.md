@@ -85,6 +85,19 @@ No installation or dependencies are required.
 
 ---
 
+## AI Usage
+
+This project was developed with assistance from ChatGPT.
+
+AI was used for:
+
+- Brainstorming application ideas and features
+- Debugging HTML, CSS, and JavaScript code
+- Improving the user interface and user experience
+
+
+---
+
 ## Author
 
 Antara Rane
