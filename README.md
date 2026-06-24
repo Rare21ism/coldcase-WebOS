@@ -1,44 +1,62 @@
 DetectiveOS
 
+Overview
+
 DetectiveOS is a detective-themed WebOS built for the Hack Club WebOS Jam.
+
+The operating system is designed around solving investigations through a collection of detective tools and applications. Users enter the system as a detective, access case information, review evidence, inspect suspects, and monitor crime activity across the city.
+
+⸻
 
 Features
 
-Welcome Screen
+* Detective-themed WebOS
+* Welcome Screen
+* Detective Login System
+* Desktop Environment
+* Live Clock
+* Draggable Application Windows
+* Case Files Application
+* Evidence Locker Application
+* Suspect Database Application
+* Crime Map Application
+* Dark Investigation Interface
 
-Users are greeted with a detective-themed landing page before entering the operating system.
+⸻
 
-Detective Login
-
-Users can enter their detective name before accessing the desktop.
-
-Desktop Environment
-
-A desktop-style interface with application icons and a live clock.
+Applications
 
 Case Files
 
-View active investigations and case information.
+Stores information about active investigations including case titles, status, and assigned detective.
 
 Evidence Locker
 
-Browse collected evidence related to ongoing investigations.
+Contains collected evidence related to ongoing investigations.
 
 Suspect Database
 
-Review suspect profiles and investigation details.
+Provides information about persons of interest and active suspects.
 
 Crime Map
 
-Track active locations and crime activity across the city.
+Displays active investigation zones and crime activity across different locations.
 
-Window System
+⸻
 
-Applications open in draggable windows and can be closed or reopened from the desktop.
+User Flow
 
-Dark Detective Theme
+Welcome Screen
+    ↓
+Detective Login
+    ↓
+Desktop Environment
+    ↓
+Open Applications
+    ↓
+Investigate Cases
 
-The entire interface uses a detective-inspired dark theme designed to resemble an investigation terminal.
+⸻
 
 Technologies Used
 
@@ -46,15 +64,42 @@ Technologies Used
 * CSS
 * JavaScript
 
-Future Plans
+⸻
 
-* Interactive crime map
-* Search system
-* Evidence linking
-* Multiple case files
-* Investigation timeline
-* Save/load functionality
+Desktop Applications
+
+Applications/
+├── Case Files
+├── Evidence Locker
+├── Suspect Database
+└── Crime Map
+
+⸻
+
+Repository Structure
+
+DetectiveOS/
+├── index.html
+├── style.css
+├── script.js
+├── README.md
+└── assets/
+
+⸻
+
+Future Improvements
+
+* Interactive Crime Map
+* Investigation Timeline
+* Search System
+* Additional Cases
+* Evidence Linking System
+* Save and Load Functionality
+
+⸻
 
 Author
 
-Antara Rane
+Antara Ganesh Rane
+
+Created as part of the Hack Club WebOS Jam.
