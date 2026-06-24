@@ -1,105 +1,94 @@
-DetectiveOS
+# DetectiveOS 🕵️
 
-Overview
+## Overview
 
-DetectiveOS is a detective-themed WebOS built for the Hack Club WebOS Jam.
+DetectiveOS is a detective-themed Web Operating System built for the Hack Club WebOS Challenge.
 
-The operating system is designed around solving investigations through a collection of detective tools and applications. Users enter the system as a detective, access case information, review evidence, inspect suspects, and monitor crime activity across the city.
+The project recreates a desktop environment inside the browser and provides investigation tools through interactive applications.
 
-⸻
+Users can manage cases, review evidence, investigate suspects, and explore crime locations through a collection of detective-themed apps.
 
-Features
+---
 
-* Detective-themed WebOS
-* Welcome Screen
-* Detective Login System
-* Desktop Environment
-* Live Clock
-* Draggable Application Windows
-* Case Files Application
-* Evidence Locker Application
-* Suspect Database Application
-* Crime Map Application
-* Dark Investigation Interface
+## Features
 
-⸻
+- Detective Login System
+- Desktop Environment
+- Live Clock
+- Case Files
+- Evidence Locker
+- Suspect Database
+- Crime Map
+- Draggable Windows
+- Detective-Themed Interface
 
-Applications
 
-Case Files
+---
 
-Stores information about active investigations including case titles, status, and assigned detective.
+## Technologies Used
 
-Evidence Locker
+- HTML5
+- CSS3
+- JavaScript
 
-Contains collected evidence related to ongoing investigations.
+---
 
-Suspect Database
+## Applications
 
-Provides information about persons of interest and active suspects.
+| Application | Description |
+|------------|-------------|
+| Case Files | View active investigations and case details |
+| Evidence Locker | Review collected evidence |
+| Suspect Database | Access suspect profiles and records |
+| Crime Map | Track investigation locations |
 
-Crime Map
+---
 
-Displays active investigation zones and crime activity across different locations.
+## Project Structure
 
-⸻
-
-User Flow
-
-Welcome Screen
-    ↓
-Detective Login
-    ↓
-Desktop Environment
-    ↓
-Open Applications
-    ↓
-Investigate Cases
-
-⸻
-
-Technologies Used
-
-* HTML
-* CSS
-* JavaScript
-
-⸻
-
-Desktop Applications
-
-Applications/
-├── Case Files
-├── Evidence Locker
-├── Suspect Database
-└── Crime Map
-
-⸻
-
-Repository Structure
-
-DetectiveOS/
+```text
+coldcase-WebOS/
+├── README.md
 ├── index.html
 ├── style.css
 ├── script.js
-├── README.md
-└── assets/
+└── images/
+```
 
-⸻
+---
 
-Future Improvements
+## How to Run
 
-* Interactive Crime Map
-* Investigation Timeline
-* Search System
-* Additional Cases
-* Evidence Linking System
-* Save and Load Functionality
+1. Clone the repository:
 
-⸻
+```bash
+git clone https://github.com/Rare21ism/coldcase-WebOS.git
+```
 
-Author
+2. Open the project folder.
 
-Antara Ganesh Rane
+3. Launch `index.html` in your browser.
 
-Created as part of the Hack Club WebOS Jam.
+No installation or dependencies are required.
+
+---
+
+## Future Improvements
+
+- Interactive Crime Map
+- Investigation Timeline
+- Search Functionality
+- Evidence Linking System
+- Multiple Case Management
+- Save and Load Functionality
+- Additional Detective Tools
+
+---
+
+## Author
+
+Antara Rane
+
+Created as part of the Hack Club WebOS Challenge.
+
+*"The game is afoot."* 🔍
